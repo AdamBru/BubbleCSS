@@ -1,0 +1,118 @@
+.input-group {
+	margin: 10px 5px;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;
+}
+
+input:not(.input-group *) , 
+select:not(.input-group *) {
+	margin: 10px 5px;
+	display: flex;
+}
+
+input, select {
+	border: 1px solid #ccc;
+	border-radius: var(--round-value);
+	padding: 5px 15px;
+	margin: 0;
+	min-width: initial;
+	width: 100%;
+	height: auto;
+	font-size: .9rem;
+}
+
+input:focus, select:focus {
+	outline: 1px solid var(--color-accent-1);
+	outline-offset: -1px;
+	filter: drop-shadow(0px 0px 2px var(--color-accent-1) );
+}
+
+/* All input-addons */
+.input-addon-left, .input-addon-center, .input-addon-right {
+	padding: 5px 15px;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+	margin: 0;
+	width: fit-content;
+}
+
+/* (addon][input) */
+.input-addon-left {
+	border-radius: var(--round-value) 0 0 var(--round-value);
+	border-right: none;
+}
+.input-flat-left {border-radius: 0 var(--round-value) var(--round-value) 0;}
+
+/* [addon] */
+.input-addon-center {
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+}
+
+/* [input] */
+.input-flat-both {border-radius: 0;}
+
+/* (input][addon) */
+.input-flat-right {border-radius: var(--round-value) 0 0 var(--round-value);}
+.input-addon-right {
+	border-radius: 0 var(--round-value) var(--round-value) 0;
+	border-left: none;
+}
+
+
+/* Search bar */
+.search-icon-right, .search-icon-left {
+	border: 1px solid #ccc;
+	top: 0;
+	height: 100%;
+	aspect-ratio: 1/1;
+	line-height: .5rem;
+	font-size: 1.5rem;
+	color: #444;
+	cursor: pointer;
+}
+
+input:focus ~ .search-icon-right, input:focus ~ .search-icon-left {
+	outline: 1px solid var(--color-accent-1);
+	outline-offset: -1px;
+}
+
+.search-icon-right {
+	border-radius: 0 var(--round-value) var(--round-value) 0;
+	position: absolute;
+	right: 0;
+}
+
+	input:has(+ .search-icon-right) {
+		padding-right: 55px;
+	}
+
+.search-icon-left {
+	border-radius: var(--round-value) 0 0 var(--round-value);
+	position: absolute;
+	left: 0;
+}
+
+	input:has(+ .search-icon-left) {
+		padding-left: 55px;
+	}
+
+/* Dropdown */
+select {
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	background: transparent url("../images/dropdown.webp") no-repeat 70px center;
+	padding-right: 40px !important;
+	background-position: calc(100% - 15px);
+	width: fit-content;
+}
+
+option {
+	background-color: transparent;
+}

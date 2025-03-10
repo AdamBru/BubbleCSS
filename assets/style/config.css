@@ -1,0 +1,32 @@
+:root {
+	/* Ściaka do logo, w folderze assets/images */
+	--logo: url("../images/default/bubblecss-logo-aqua.svg");
+	/* --logo: url("../images/"); */
+
+	/* Definicje kolorów */
+	--color-main: #ffc3c3;
+	--color-accent-1: #77cbd3;
+	--color-accent-2: #9fe4ea;
+
+	/* Wartość zaokrąglenia rogów; wartość domyślna: 30px */
+	--round-value: 30px;
+
+	/* Domyślna wielkość czcionki */
+	font-size: 20px;
+
+	/* Domyślna czcionka */
+	font-family: "Lato", sans-serif;
+
+
+	/* coś jakieś tło tutaj czy cuś */
+
+
+
+
+
+
+
+	/* Ścieka do favicon, w folderze assets/images 
+	--favicon: url("../images/default/bubblecss-logo-aqua.svg"); /* do zmiany obrazek na favicon 
+	--favicon: url("../images/"); */
+}

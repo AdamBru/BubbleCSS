@@ -1,0 +1,206 @@
+#navigation-placeholder {
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+	width: calc(100% - var(--round-value)*2);
+	position: sticky;
+	top: 0;
+}
+
+.nav-toggle {
+	display: none;
+	background-color: var(--color-accent-1);
+	width: fit-content;
+	height: fit-content;
+	z-index: 100;
+	padding: 0 10px 10px;
+	margin-bottom: 10px;
+	justify-content: center;
+	border-radius: 0 0 calc(var(--round-value)/2) calc(var(--round-value)/2);
+	font-size: 1.5rem;
+	line-height: 1rem;
+}
+
+.top-nav {
+	background-color: var(--color-accent-1);
+	max-width: 2000px;
+	width: 100%;
+	height: fit-content;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	border-radius: 0 0 var(--round-value) var(--round-value);
+	margin-bottom: 10px;
+	padding: 0 10px;
+	filter: drop-shadow(0px 0px 15px #cdcdcde6);
+}
+
+	.top-nav > ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		row-gap: 0;
+		/* overflow-x: auto;
+		overflow-y: hidden; */
+	}
+	
+		.top-nav > ul > li {
+			position: relative;
+			height: 100%;
+			white-space: nowrap;
+			display: flex;
+			justify-content: center;
+		}
+
+			.top-nav > ul > li::before {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				height: 15px;
+			}
+	
+				.top-nav > ul > li > a {
+					display: block;
+					padding: 2px 20px;
+					margin: 5px 0;
+					border-radius: var(--round-value);
+					color: #fff;
+					text-decoration: none;
+					transition: background-color .2s ease-in-out;
+					height: 100%;
+				}
+	
+				.top-nav > ul > li > a:hover, 
+				.top-nav > ul > li:hover > a, 
+				.top-nav > ul > li > ul:hover ~ a {
+					background-color: #fff2;
+				}
+	
+			.top-nav > ul > li > ul {
+				color: #fff;
+				background-color: var(--color-accent-2);
+				position: absolute;
+				top: 100%;
+				white-space: nowrap;
+				min-width: fit-content;
+				text-align: center;
+				filter: drop-shadow(0px 0px 15px #cdcdcd80);
+				margin-top: 10px;
+				padding-top: 0;
+				border-radius: calc(var(--round-value) * .66);
+				z-index: 101; 
+				overflow: hidden;
+				pointer-events: none;
+				
+				transform: scaleY(0);
+				transform-origin: top;
+				transition: transform .1s ease-in-out;
+			}
+
+				.top-nav > ul > li > ul > li {
+					position: relative;
+				}
+
+					.top-nav > ul > li > ul > li > a {
+						padding: 5px 15px;
+						color: #fff;
+						text-decoration: none;
+						text-align: start;
+						text-align: center;
+						padding: 2px 20px;
+						margin: 5px;
+						display: block;
+						pointer-events: auto;
+						cursor: pointer;
+						border-radius: var(--round-value);
+						transition: background-color .2s ease-in-out;
+					}
+
+					.top-nav > ul > li > ul > li > a::before{
+						content: "";
+						position: absolute;
+						top: -3px;
+						left: 0;
+						width: 100%;
+						height: 120%; 
+						z-index: 102;
+					}
+
+					.top-nav > ul > li > ul > li > a:hover {
+						background-color: #fff2;
+					}
+
+			.top-nav > ul > li:hover > ul, .top-nav > ul > li > ul:hover {
+				transform: scaleY(1);
+			}
+
+/* Hamburger Menu */
+@media (max-width: 768px) {
+
+	#navigation-placeholder {
+		justify-content: flex-end;
+		top: var(--header-height) !important;
+	}
+
+	.top-nav {
+		display: none;
+	}
+
+	.nav-toggle {
+		display: block;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.top-nav.active {
+		display: block;
+		position: absolute;
+		width: 100%;
+		margin-top: calc(var(--round-value));
+	}
+	
+		.top-nav.active ~ .nav-toggle {
+			width: 100%;
+			text-align: end;
+			border-radius: 0;
+		}
+
+		.top-nav > ul {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content:flex-start;
+			align-items: center;
+			align-content: center;
+			gap: 5px;
+			font-size: 1rem;
+			margin-bottom: 10px;
+		}
+
+		.top-nav.active > ul > li {
+			position: relative;
+		}
+		.top-nav.active > ul > li::before {
+			content: none;
+			background-color: #6662;
+		}
+		.top-nav.active > ul > li:hover > ul {
+			position: absolute;
+			top: 100%;
+			width: 100%;
+			pointer-events: auto;
+			transform: scaleY(1);
+			margin-top: 0;
+		}
+}
