@@ -1,0 +1,28 @@
+/* Pole z ramką */
+.framed-field, .frmdfld {
+	width: 100%;
+	height: auto;
+	padding: 15px 20px;
+	background: none;
+	border-radius: var(--round-value);
+	border: 1px solid #ccc;
+}
+
+/* hr.divider-line */
+.divider-line, .divide {
+	height: 1px;
+	background: #ccc;
+	border: none;
+	position: relative;
+	left: -20px;
+	width: calc(100% + 40px);
+	margin: 15px 0;
+}
+
+/* span TODO */
+.todo {
+	font-style: italic;
+	color: #46953b;
+	border: 2px dashed #46953b;
+	padding: 2px 5px 2px 2px;
+}

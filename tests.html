@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tests</title>
+
+	<link rel="stylesheet" href="./assets/style/main.css">
+	<script src="./components/components-adder.js"></script>
+</head>
+<body>
+	
+	<div id="header-placeholder"></div>
+
+	<div id="navigation-placeholder"></div>
+	
+	<div id="menu-placeholder"></div>
+
+	<div class="page-container">
+		
+		<!-- Przyciski -->
+		<div class="framed-field">
+			<button class="btn">Guziol</button>
+			<button class="btn color-main">Kolor główny</button>
+			<button class="btn color-accent-1">Kolor akcentu 1</button>
+			<button class="btn color-accent-2">Kolor akcentu 2</button>
+			<button class="btn color-green">Akceptuj</button>
+			<button class="btn color-red">Anuluj</button>
+			<button class="btn color-yellow">Uwaga</button>
+
+			<hr class="divider-line">
+
+			<p>Przyciski</p>
+		</div>
+		
+		<div class="frmdfld">
+			<h1>Nagłówek 1</h1>
+			<h2>Nagłówek 2</h2>
+			<h3>Nagłówek 3</h3>
+			<h4>Nagłówek 4</h4>
+			<h5>Nagłówek 5</h5>
+			<h6>Nagłówek 6</h6>
+			<p>Tekst</p>
+
+			<div class="lato-bold-italic">Lorem ipsum</div>
+
+			<span class="todo">TODO</span>
+		</div>
+
+
+		<div class="framed-field">
+			<p class="text-start">Tekst na początku wiersza</p>
+			<p class="text-center">Tekst na środku wiersza</p>
+			<p class="text-end">Tekst na końcu wiersza</p>
+		</div>
+
+		<!-- Inputs -->
+		<div class="framed-field">
+
+			<div class="input-group">
+				<input type="text">
+			</div>
+
+			<div class="input-group">	
+				<span class="input-addon-left">example.com/user/</span>
+				<input type="text" class="input-flat-left">
+			</div>
+
+			<div class="input-group">
+				<input type="text" class="input-flat-right">
+				<span class="input-addon-right">.pl</span>
+			</div>
+			
+			<div class="input-group">
+				<span class="input-addon-left">www.</span>
+				<input type="text" class="input-flat-both">
+				
+				<select name="" id="" class="input input-addon-right">
+					<option value="">.com</option>
+					<option value="">.pl</option>
+					<option value="">.eu</option>
+					<option value="">.org</option>
+					<option value="">.de</option>
+				</select>
+			</div>
+			
+			<div class="input-group">
+				<input type="text" class="input-flat-right" placeholder="użytkownik">
+				<span class="input-addon-center">@</span>
+				<input type="text" class="input-flat-left" placeholder="serwer">
+			</div>
+
+			<div class="input-group">
+				<input type="text" placeholder="Wyszukaj">
+				<button class="search-icon-right">&#x2315;</button>
+			</div>
+
+			<div class="input-group">
+				<input type="text" placeholder="Wyszukaj">
+				<button class="search-icon-left">&#x2315;</button>
+			</div>
+
+			<hr class="divide">
+
+			<select class="input-addon-left">
+				<option value="">Option 1</option>
+				<option value="">Option 2</option>
+			</select>
+
+			<hr class="divider-line">
+
+			<p>Inputy</p>
+		</div>
+
+		<!-- Skróty klas -->
+		<div class="frmdfld">
+
+			<code>
+				<p>framed-field OR frmdfld</p>
+				<p>hr.divider-line OR hr.divide</p>
+			</code>
+
+			<hr class="divide">
+
+			<p>Skróty klas</p>
+		</div>
+
+
+	</div>
+
+	<div id="footer-placeholder"></div>
+	
+</body>
+</html>

@@ -1,0 +1,60 @@
+.btn {
+	width: fit-content;
+	height: fit-content;
+	padding: 5px 15px;
+	border-radius: var(--round-value);
+	border: none;
+	position: relative;
+	cursor: pointer;
+	margin: 10px 5px;
+	font-size: .85rem;
+	background-color: #efefef; /* Domyślny kolor przycisku */
+}
+
+.btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(100, 100, 100, 0.16);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	pointer-events: none; 
+	border-radius: var(--round-value);
+}
+
+.btn:hover::after {
+	opacity: 1;
+}
+
+/* Przycisk z kolorem głównym */
+.color-main {
+	background-color: var(--color-main);
+}
+
+/* Przycisk z kolorem akcentu 1 */
+.color-accent-1 {
+	background-color: var(--color-accent-1);
+}
+
+/* Przycisk z kolorem akcentu 2 */
+.color-accent-2 {
+	background-color: var(--color-accent-2);
+}
+
+/* Pzrcisk "Akceptuj" koloru zielonego */
+.color-green {
+	background-color: #4bba69;
+}
+
+/* Przycisk "Anuluj" koloru czerwonego */
+.color-red {
+	background-color: #e64848;
+}
+
+/* Przycisk "Uwaga" koloru żółtego */
+.color-yellow {
+	background-color: #ffca2c;
+}

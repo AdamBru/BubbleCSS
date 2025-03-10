@@ -1,0 +1,20 @@
+dodac link do wszystkich pobranych z internetu zasobow
+
+safari coś nie funguje z burgerem
+animacja burgera
+badges
+
+checkbox listy
+
+listy (ul, ol(+style) )
+
+!!!!!
+poprawic #menu-placeholder + div {	flex: 1; }
+zrobic zeby menu można bylo wykorzystywac jako listy
+zbudowac index i docs
+layouty
+ścieżka gdzie aktualnie jestem (docs > elements > button) wyswietlana
+code snippet
+!!! ZRESPONSYFIKOWAĆ MENU
+
+listy rozwijane
