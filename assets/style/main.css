@@ -4,13 +4,11 @@
 @import url(./layout.css);
 @import url(./navigation.css);
 @import url(./header.css);
-@import url(./menu1.css);
+@import url(./menu.css);
 @import url(./buttons.css);
 @import url(./inputs.css);
 @import url(./text.css);
 @import url(./footer.css);
-@import url(../style.css); /* For user custom styles */
-
 
 
 @import url(./not-organized-yet.css);
