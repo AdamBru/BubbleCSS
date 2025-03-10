@@ -1,0 +1,16 @@
+:root {
+	/* Ściaka do logo, w folderze assets/images */
+	--logo: url("../images/default/bubblecss-logo-aqua.svg");
+	/* --logo: url("../images/"); */
+
+	/* Definicje kolorów */
+	--color-main: #54e2bc;
+	--color-accent-1: #418a91;
+	--color-accent-2: #5f7c7f;
+
+	/* Wartość zaokrąglenia rogów; wartość domyślna: 30px */
+	--round-value: 10px;
+
+
+
+}
