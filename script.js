@@ -1,5 +1,16 @@
 // Pobiera ścieżkę bazową z atrybutu data-base-path w znaczniku script
 const basePath = document.querySelector('script[src$="script.js"]').dataset.basePath;
+const logoPath = document.querySelector('script[src$="script.js"]').dataset.logoPath;
+
+// Ustawia logo w CSS
+const logoUrl = `${basePath}assets/images/${logoPath}`;
+console.log(logoUrl);
+const logoElement = document.querySelector('.logo');
+if (logoElement) {
+	logoElement.style.backgroundImage = `url('${logoUrl}')`;
+} else {
+	console.error("Nie znaleziono elementu .logo");
+}
 
 // Dodaje nagłówek zdefiniowany w components/header.html w miejsce elementu div o id 'header-placeholder'
 fetch(`${basePath}components/header.html`)
