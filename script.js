@@ -1,5 +1,5 @@
 // Dodaje nagłówek zdefiniowany w components/header.html w miejsce elementu div o id 'header-placeholder'
-fetch('./components/header.html')
+fetch('/components/header.html')
 	.then(response => response.text())
 	.then(data => {
 		document.getElementById('header-placeholder').innerHTML = data;
@@ -18,7 +18,7 @@ function calculateHeaderHeight() {
   }
 	
 // Dodaje pasek nawigacji zdefiniowany w components/navigation.html w miejsce elementu div o id 'navigation-placeholder'
-fetch('./components/navigation.html')
+fetch('/components/navigation.html')
 	.then(response => response.text())
 	.then(data => {
 		document.getElementById('navigation-placeholder').innerHTML = data;
@@ -34,7 +34,7 @@ fetch('./components/navigation.html')
 	.catch(error => console.error('Błąd wczytywania navigation', error));
 
 // Dodaje menu zdefiniowane w components/menu.html w miejsce elementu div o id 'menu-placeholder'
-fetch('./components/menu.html')
+fetch('/components/menu.html')
 	.then(response => response.text())
 	.then(data => {
 		document.getElementById('menu-placeholder').innerHTML = data;
@@ -45,7 +45,7 @@ fetch('./components/menu.html')
 	.catch(error => console.error('Błąd wczytywania menu', error));
 
 // Dodaje stopkę zdefiniowaną w components/footer.html w miejsce elementu div o id 'footer-placeholder'
-fetch('./components/footer.html')
+fetch('/components/footer.html')
 	.then(response => response.text())
 	.then(data => {document.getElementById('footer-placeholder').innerHTML = data;})
 	.catch(error => console.error('Błąd wczytywania footer', error));
@@ -54,7 +54,6 @@ fetch('./components/footer.html')
 // Kopiuj do schowka
 function toClipboard(e) {
 	var copyText = e.target.parentNode.querySelector('input').value;
-	console.log(copyText);
 
 	navigator.clipboard.writeText(copyText);
 	
