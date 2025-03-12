@@ -5,7 +5,7 @@ const logoPath = document.querySelector('script[src$="script.js"]').dataset.logo
 // Ustawia logo w CSS
 const logoUrl = `${basePath}assets/images/${logoPath}`;
 console.log(logoUrl);
-const logoElement = document.querySelector('.logo');
+const logoElement = document.querySelectorAll('.logo');
 if (logoElement) {
 	logoElement.style.backgroundImage = `url('${logoUrl}')`;
 } else {
