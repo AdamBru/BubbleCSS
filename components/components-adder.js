@@ -56,9 +56,6 @@ function toClipboard(e) {
 	var copyText = e.target.parentNode.querySelector('input').value;
 	console.log(copyText);
 
-	copyText.select();
-	copyText.setSelectionRange(0, 99999);
-
 	navigator.clipboard.writeText(copyText);
 	
 	// testowo: alert; docelowo: tooltip
