@@ -139,6 +139,7 @@
 
 					.top-nav > ul > li > ul > li > a:hover {
 						background-color: #fff2;
+						border-radius: calc(var(--round-value) / 2);
 					}
 
 			.top-nav > ul > li:hover > ul, .top-nav > ul > li > ul:hover {
