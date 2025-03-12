@@ -1,7 +1,7 @@
 :root {
-	/* Ściaka do logo, w folderze assets/images */
+	/* Ściaka do logo, w folderze /assets/images */
 	--logo: url("../images/default/bubblecss-logo-aqua.svg");
-	/* --logo: url("../images/"); */
+	/* --logo: url("/assets/images/"); */
 
 	/* Definicje kolorów */
 	--color-main: #54e2bc;
