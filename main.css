@@ -1,14 +1,14 @@
-@import url(/assets/style/config.css);
-@import url(/assets/style/fonts.css);
-@import url(/assets/style/clear-styles.css);
-@import url(/assets/style/layout.css);
-@import url(/assets/style/navigation.css);
-@import url(/assets/style/header.css);
-@import url(/assets/style/menu.css);
-@import url(/assets/style/buttons.css);
-@import url(/assets/style/inputs.css);
-@import url(/assets/style/text.css);
-@import url(/assets/style/footer.css);
+@import url(./assets/style/config.css);
+@import url(./assets/style/fonts.css);
+@import url(./assets/style/clear-styles.css);
+@import url(./assets/style/layout.css);
+@import url(./assets/style/navigation.css);
+@import url(./assets/style/header.css);
+@import url(./assets/style/menu.css);
+@import url(./assets/style/buttons.css);
+@import url(./assets/style/inputs.css);
+@import url(./assets/style/text.css);
+@import url(./assets/style/footer.css);
 
 
-@import url(/assets/style/not-organized-yet.css);
+@import url(./assets/style/not-organized-yet.css);
