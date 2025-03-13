@@ -7,6 +7,8 @@ fetch(`${basePath}components/header.html`)
 	.then(response => response.text())
 	.then(data => {
 		document.getElementById('header-placeholder').innerHTML = data;
+		loadLogo();
+		
 		calculateHeaderHeight();
 	})
 	.catch(error => console.error('Błąd wczytywania header', error));
@@ -72,16 +74,20 @@ clipboardButtons.forEach(
 );
 
 // Ustawia logo w CSS
-const logoUrl = `${basePath}assets/images/${logoPath}`;
-const logos = document.querySelectorAll('.logo');
-if (logos.length > 0) {
-    logos.forEach(logo => {
-        logo.style.background = `url('${logoUrl}')`;
-    });
-} else {
-    console.error("Nie znaleziono elementów .logo");
+function loadLogo() {
+	const logoUrl = `${basePath}assets/images/${logoPath}`;
+	const logos = document.querySelectorAll('.logo');
+	if (logos.length > 0) {
+		logos.forEach(logo => {
+			console.log(logo.style.background)
+			logo.style.background = `url('${logoUrl}')`;
+		});
+	} else {
+		console.error("Nie znaleziono elementów .logo");
+	}
 }
-														// Test ścieżek
-														console.log('Ścieżka domowa: ' + basePath);
-														console.log('Ścieżka logo: ' + logoUrl);
-														console.log('header: ' + `${basePath}components/header.html`);
+	
+															// Test ścieżek
+															console.log('Ścieżka domowa: ' + basePath);
+															console.log('Ścieżka logo: ' + logoUrl);
+															console.log('header: ' + `${basePath}components/header.html`);
