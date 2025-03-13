@@ -8,6 +8,22 @@
 	border: 1px solid #ccc;
 }
 
+pre > code {
+	position: relative;
+	width: calc(100% + 40px);
+	left: -20px;
+	margin-bottom: -30px;
+	top: -15px;
+}
+
+code.inline {
+	background-color: #282c34;
+	color: #abb2bf;
+	border-radius: 3px;
+	padding: 3px 5px;
+	font-size: .9rem;
+}
+
 /* hr.divider-line */
 .divider-line, .divide {
 	height: 1px;
@@ -25,4 +41,22 @@
 	color: #46953b;
 	border: 2px dashed #46953b;
 	padding: 2px 5px 2px 2px;
+}
+
+/* span Copy icon */
+.copy {
+	background-color: lightgray;
+	width: 20px;
+	height: 20px;
+	background: url(), center, no-repeat;
+}
+
+/* hr */
+hr {
+	height: 1px;
+	background: #ccc;
+	border: none;
+	position: relative;
+	width: 100%;
+	margin: -15px 0 0 0;
 }
