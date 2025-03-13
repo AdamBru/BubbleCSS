@@ -43,12 +43,17 @@ code.inline {
 	padding: 2px 5px 2px 2px;
 }
 
-/* span Copy icon */
+/* btn Copy icon */
 .copy {
-	background-color: lightgray;
-	width: 20px;
-	height: 20px;
-	background: url(), center, no-repeat;
+	background: url(/assets/images/copy.png), #ddd;
+	background: url(https://adambru.github.io/BubbleCSS/assets/images/copy.png), #ddd;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 25px;
+	width: 25px;
+	padding: 17px 20px;
+	margin: 0;
 }
 
 /* hr */
