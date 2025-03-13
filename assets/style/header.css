@@ -2,10 +2,10 @@
 	height: 60px;
 	min-width: 60px;
 	margin: 5px 15px;
-	background: var(--logo);
 	background-size: contain;
 	background-repeat: no-repeat;
-	filter: drop-shadow(0px 0px 3px #a1ccd7);
+	background-position: center;
+	filter: drop-shadow(0px 0px 3px #aaa);
 }
 
 #header-placeholder {
