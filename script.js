@@ -59,7 +59,7 @@ fetch(`${basePath}components/footer.html`)
 
 // Kopiuj do schowka
 function toClipboard(e) {
-	var copyText = e.target.parentNode.querySelector('input').value;
+	var copyText = e.target.parentNode.querySelector('code');
 
 	navigator.clipboard.writeText(copyText);
 	
@@ -87,7 +87,7 @@ function loadLogo() {
 	}
 }
 	
-															// Test ścieżek
-															console.log('Ścieżka domowa: ' + basePath);
-															console.log('Ścieżka logo: ' + logoUrl);
-															console.log('header: ' + `${basePath}components/header.html`);
+// Test ścieżek
+// console.log('Ścieżka domowa: ' + basePath);
+// console.log('Ścieżka logo: ' + logoUrl);
+// console.log('header: ' + `${basePath}components/header.html`);
