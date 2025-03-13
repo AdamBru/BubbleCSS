@@ -2,16 +2,6 @@
 const basePath = document.querySelector('script[src$="script.js"]').dataset.basePath;
 const logoPath = document.querySelector('script[src$="script.js"]').dataset.logoPath;
 
-// Ustawia logo w CSS
-const logoUrl = `${basePath}assets/images/${logoPath}`;
-console.log(logoUrl);
-const logoElement = document.querySelectorAll('.logo');
-if (logoElement) {
-	logoElement.style.backgroundImage = `url('${logoUrl}')`;
-} else {
-	console.error("Nie znaleziono elementu .logo");
-}
-
 // Dodaje nagłówek zdefiniowany w components/header.html w miejsce elementu div o id 'header-placeholder'
 fetch(`${basePath}components/header.html`)
 	.then(response => response.text())
@@ -80,3 +70,18 @@ const clipboardButtons = document.querySelectorAll('[data-toClipboard]');
 clipboardButtons.forEach(
 	button => button.addEventListener('click', toClipboard)
 );
+
+// Ustawia logo w CSS
+const logoUrl = `${basePath}assets/images/${logoPath}`;
+const logos = document.querySelectorAll('.logo');
+if (logos.length > 0) {
+    logos.forEach(logo => {
+        logo.style.background = `url('${logoUrl}')`;
+    });
+} else {
+    console.error("Nie znaleziono elementów .logo");
+}
+														// Test ścieżek
+														console.log('Ścieżka domowa: ' + basePath);
+														console.log('Ścieżka logo: ' + logoUrl);
+														console.log('header: ' + `${basePath}components/header.html`);
