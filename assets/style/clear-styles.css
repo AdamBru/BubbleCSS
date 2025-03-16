@@ -53,6 +53,7 @@ li, ul, ol {
 }
 
 /* 11. Reset links */
-a:link {
+a:link, a:visited, a:active {
 	text-decoration: none;
+	color: inherit;
 }
