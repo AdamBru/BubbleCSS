@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Szablon | BubbleCSS</title>
+
+	<!-- <link rel="stylesheet" href="https://adambru.github.io/BubbleCSS/main.css">																			<!-- Link CSS Framework -->
+	<!-- <script src="https://adambru.github.io/BubbleCSS/script.js" type="module" data-base-path="../" data-logo-path="bubblecss-logo-aqua.png"></script>	<!-- Link JS Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js">hljs.highlightAll();</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>		<!-- Link Highlight.js -->
+	<script>hljs.highlightAll();</script>
+
+	<link rel="stylesheet" href="../../main.css">																				<!-- FOR TESTING PURPOSES ONLY -->
+	<script src="../../script.js" type="module" data-base-path="../" data-logo-path="bubblecss-logo-aqua.png"></script>			<!-- FOR TESTING PURPOSES ONLY -->
+
+	<link rel="stylesheet" href="../assets/config.css">
+	<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+	<div id="header-placeholder"></div>
+
+	<div id="navigation-placeholder"></div>
+
+	<div id="menu-placeholder"></div>
+
+	<div class="page-container">
+
+<!-- Szablon -->
+		<h1>Szablon</h1>
+		<hr>
+	<!-- Komponenety -->
+			<h2 id="components">Komponenety</h2>
+			<hr>
+				<p>
+					Aby przyspieszyć dostosowywanie powtarzalnych elementów strony można wykorzystać Komponenety. Komponenty to gotowe fragmenty kodu przechowywane w plikach w folderze <code class="inline">/components</code>.
+				</p>
+
+				<div class="frmdfld">
+					<p><i>header.html</i></p>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="header"&gt;
+    &lt;a href="/index.html"&gt;
+        &lt;div class="logo"&gt;&lt;/div&gt;
+
+        &lt;h1&gt;Website&lt;/h1&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+					<hr class="divide">
+					<p><i>navigation.html</i></p>
+					<hr class="divide">
+<pre><code class="language-html">&lt;nav class="top-nav"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="/index.html"&gt;Strona główna&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="/options.html"&gt;Opcje&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Fancy&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Dropdown&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="/about.html"&gt;O nas&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/contact.html"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+					<hr class="divide">
+					<p><i>menu.html</i></p>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="menu"&gt;
+    &lt;ul&gt;
+        &lt;li&gt; &lt;a href="/category1.html"&gt; &lt;h1&gt;Kategoria 1&lt;/h1&gt; &lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#1"&gt;Podkategoria 1&lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#2"&gt;Podkategoria 2&lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#3"&gt;Podkategoria 3&lt;/a&gt; &lt;/li&gt;
+
+        &lt;li&gt; &lt;a href="/category2.html"&gt; &lt;h1&gt;Kategoria 2&lt;/h1&gt; &lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#1"&gt;Podkategoria 1&lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#2"&gt;Podkategoria 2&lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt; &lt;a href="#3"&gt;Podkategoria 3&lt;/a&gt; &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="menu-toggle"&gt;&#9776; Menu&lt;/div&gt;
+</code></pre>
+					<hr class="divide">
+					<p><i>footer.html</i></p>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="footer"&gt;
+
+&lt;/div&gt;
+</code></pre>
+				<hr class="divide">
+				</div>
+	<!-- Elementy -->
+		<h2 id="elements">Elementy</h2>
+		<hr>
+			<p>
+				Implementacja Komponenetów na stronie jest bardzo prosta, wystarczy dodać odpowiedni znacznik.
+			</p>
+
+			<div class="frmdfld">
+				<p><i>html</i></p>
+				<hr class="divide">
+<pre><code>&lt;div id="header-placeholder"&gt;&lt;/div&gt;
+
+&lt;div id="navigation-placeholder"&gt;&lt;/div&gt;
+
+&lt;div id="menu-placeholder"&gt;&lt;/div&gt;
+
+...
+
+&lt;id="footer-placeholder"&gt;
+</code></pre>
+				<hr class="divide">
+			</div>
+
+			<div class="frmdfld">
+				<p>
+					Główną zawartość strony należy umieścić w elemencie <code class="inline">div</code> z klasą <code class="inline">class="page-container"</code>.
+				</p>
+				<hr class="divide">
+<pre><code class="language-html">&lt;div class="page-container"&gt;
+    &lt;!-- Tu główna zawartość strony --&gt;
+&lt;/div&gt;
+</code></pre>
+				<hr class="divide">
+				<p class="text-end">
+					<button class="btn copy" data-toClipboard></button> 
+				</p>
+			</div>
+
+			<h2>Pole z ramką</h2>
+			<hr>
+
+			<p>
+				Pole z ramką może zostać wykorzystane m. in. do tworzenia artykułów lub formularzy. Dodawane jest za pomocą znacznika <code class="inline">&lt;div class="framed-field"&gt;&lt/div&gt;</code> lub w skrócie <code class="inline">&lt;div class="frmdfld"&gt;&lt/div&gt;</code>. <br>
+				Można je przedzielić za pomocą poziomej linii:  <code class="inline">&lt;hr class="divider-line"&gt;</code> lub w skrócie <code class="inline">&lt;hr class="divide"&gt;</code>.
+			</p>
+
+			<div class="frmdfld">
+				<div class="frmdfld" style="margin-bottom: 25px;">
+					<p>Lorem ipsum</p>
+					<hr class="divide">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa commodi illum praesentium similique fuga veniam non voluptatem. Quis accusantium aut iure animi odit tenetur eum dolores ipsum illo distinctio. Impedit.</p>
+				</div>
+				<hr class="divide">
+<pre><code class="language-html">&lt;div class="frmdfld"&gt;
+    &lt;hr class="divide"&gt;
+&lt;/div&gt;
+</code></pre>
+				<hr class="divide">
+				<p class="text-end">
+					<button class="btn copy" data-toClipboard></button> 
+				</p>
+			</div>
+
+			<h2>Pozioma linia</h2>
+			<hr>
+				<p>
+					Pozioma linia do oddzielania sekcji. <code class="inline">&lt;hr&gt;</code>.
+				</p>
+
+	</div>
+
+	<div id="footer-placeholder"></div>
+	
+</body>
+</html>
