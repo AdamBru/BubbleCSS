@@ -63,7 +63,7 @@
 	font-weight: normal;
 }
 
-#menu-placeholder + div {	/* bardziej modyfikowalne to zrób */
+#menu-placeholder + div {
 	flex: 1;
 }
 
@@ -84,15 +84,18 @@
 		position: sticky;
 		left: 0;
 		top: var(--header-height);
+		width: 100%;
 		/* justify-content: flex-start; */
 	}
 
 	.menu {
-		display: none;
+		/* display: none; */
+		width: 100%;
 	}
 
 	.menu-toggle {
-		display: flex;
+		display: none;
+		/* display: flex; */
 		flex-wrap: nowrap;
 		position: absolute;
 		left: 0;

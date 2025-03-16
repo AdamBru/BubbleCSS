@@ -10,6 +10,7 @@ body {
 
 .page-container {
 	max-width: 2000px;
+	min-width: 0;
 	width: 100%;
 	height: auto;
 	min-height: 100vh;
