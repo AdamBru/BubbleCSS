@@ -14,8 +14,8 @@
 	<link rel="stylesheet" href="../../main.css">																				<!-- FOR TESTING PURPOSES ONLY -->
 	<script src="../../script.js" type="module" data-base-path="../" data-logo-path="bubblecss-logo-aqua.png"></script>			<!-- FOR TESTING PURPOSES ONLY -->
 
-	<link rel="stylesheet" href="./assets/config.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="../assets/config.css">
+	<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
@@ -35,18 +35,19 @@
 				<p>Aby rozpocząć pracę z frameworkiem BubbleCSS należy umieścić natępujące linki w znaczniku <code class="inline">&lt;head&gt;</code>.</p>
 
 				<div class="frmdfld">
+					<li><code class="inline">data-base-path</code> - ścieżka katalogu głównego projektu. Dla stron w katalogu głównym projektu przeważnie <code class="inline">./</code>, dla podstron w podfolderach <code class="inline">../</code>.</li>
+					<li><code class="inline">data-logo-path</code> - nazwa pliku logo w katalogu <code class="inline">/assets/images</code>.</li>
 					<hr class="divide">
 <pre><code class="language-html">&lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;title&gt;Page title&lt;/title&gt;
     &lt;link rel="stylesheet" href="https://adambru.github.io/BubbleCSS/main.css"&gt;
-    &lt;script src="https://adambru.github.io/BubbleCSS/script.js" type="module" data-base-path="../" data-logo-path="bubblecss-logo-aqua.png"&gt;&lt;script&gt;
+    &lt;script src="https://adambru.github.io/BubbleCSS/script.js" type="module" data-base-path="./" data-logo-path="bubblecss-logo-aqua.png"&gt;&lt;script&gt;
 &lt;/head&gt;
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">
-						<span class="todo">TODO: data-</span>
 						<button class="btn copy" data-toClipboard></button> 
 					</p>
 				</div>
@@ -55,8 +56,8 @@
 	<!-- Struktura projektu -->
 			<h2 id="project-structure">Struktura projektu</h2>
 			<hr>
-	
-				<p>Aby framework działał poprawnie, musi zostać zachowana właściwa organizacja plików.
+				<p>
+					Aby framework działał poprawnie, musi zostać zachowana właściwa organizacja plików.
 				</p>
 
 				<div class="frmdfld">
@@ -86,17 +87,37 @@
 	<!-- Konfiguracja -->
 			<h2 id="configuration">Konfiguracja</h2>
 			<hr>
-
 				<p>
-					Opis
+					Aby dostosować wygląd stron, należy edytować pliki <code class="inline">config.css</code> i <code class="inline">style.css</code> w folderze <code class="inline">/assets</code>. Do każdego dokumentu należy w znaczniku <code class="inline">&lt;head&gt;</code> dodać link do plików.
 				</p>
 
 				<div class="frmdfld">
+					<p><i>*.html</i></p>
 					<hr class="divide">
-<pre><code class="language-html">
-&lt;head&gt;
+<pre><code class="language-html">...
+    &lt;link rel="stylesheet" href="/assets/config.css"&gt;
+    &lt;link rel="stylesheet" href="/assets/style.css"&gt;
 &lt;/head&gt;
 </code></pre>
+					<hr class="divide">
+					<p><i>config.css</i></p>
+					<hr class="divide">
+<pre><code class="language-css">:root {
+    /* Definicje kolorów */
+    --color-main: #ff0000;
+    --color-accent-1: #00ff00;
+    --color-accent-2: #0000ff;
+
+    /* Wartość zaokrąglenia rogów; wartość domyślna: 30px */
+    --round-value: ;
+}
+</code></pre>
+					<hr class="divide">
+					<p><i>style.css</i></p>
+					<hr class="divide">
+<pre><code class="language-css">&lt;!-- Tu umieść własne style --&gt;
+</code></pre>
+					<hr class="divide">
 				</div>
 
 

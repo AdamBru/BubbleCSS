@@ -62,7 +62,8 @@ code.inline {
 	position: relative;
 }
 
-.divide:has(~ p > .copy) {
+.divide:has(~ p > .copy),
+.divider-line:has(~ p > .copy) {
 	margin-bottom: 5px;
 }
 
