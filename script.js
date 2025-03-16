@@ -59,11 +59,9 @@ fetch(`${basePath}components/footer.html`)
 
 // Kopiuj do schowka
 function toClipboard(e) {
-	var copyText = e.target.parentNode.querySelector('code');
-
+	var copyText = e.target.parentNode.parentNode.querySelector('pre > code').textContent;
 	navigator.clipboard.writeText(copyText);
 	
-	// testowo: alert; docelowo: tooltip
 	alert("Copied the text: " + copyText);
   }
 
