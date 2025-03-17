@@ -15,6 +15,7 @@
 .link {
 	position: relative;
 	font-weight: bold;
+	display: inline-block;
 
 	&::before {
 		content: '';
