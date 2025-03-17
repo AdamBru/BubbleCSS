@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instalacja | BubbleCSS</title>
+
+	<!-- <link rel="stylesheet" href="https://adambru.github.io/BubbleCSS/main.css">																			<!-- Link CSS Framework -->
+	<!-- <script src="https://adambru.github.io/BubbleCSS/script.js" type="module" data-base-path="../" data-logo-path="bubblecss-logo-aqua.png"></script>	<!-- Link JS Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><!-- Link Highlight.js -->
+	<script>hljs.highlightAll();</script>
+
+	<link rel="stylesheet" href="../../main.css">																				<!-- FOR TESTING PURPOSES ONLY -->
+	<script src="../../script.js" type="module" data-base-path="../" data-logo-path="bubblecss-logo-aqua.png"></script>			<!-- FOR TESTING PURPOSES ONLY -->
+
+	<link rel="stylesheet" href="../assets/config.css">
+	<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+	<div id="header-placeholder"></div>
+
+	<div id="navigation-placeholder"></div>
+
+	<div id="menu-placeholder"></div>
+
+	<div class="page-container">
+<!-- Interaktywne -->
+		<h1>Interaktywne</h1>
+		<hr>
+	<!-- Przyciski -->
+			<h2 id="buttons">Przyciski</h2>
+			<hr>
+				<p>
+					Przycisk ważna sprawa. Aby go stworzyć wystarczy dodać klasę <code class="inline">"btn"</code> do znacznika <code class="inline">&lt;button></code>. Aby zmienić jego kolor, należy dodać do niego klasę odpowiedniego koloru.
+				</p>
+
+				<div class="frmdfld">
+					<button class="btn">Guziol</button>
+					<button class="btn color-main">Kolor główny</button>
+					<button class="btn color-accent-1">Kolor akcentu 1</button>
+					<button class="btn color-accent-2">Kolor akcentu 2</button>
+					<button class="btn color-green">Akceptuj</button>
+					<button class="btn color-yellow">Uwaga</button>
+					<button class="btn color-red">Anuluj</button>
+					<button class="btn color-blue">Informacja</button>
+					<hr class="divide">
+<pre><code class="language-html">&lt;button class="btn">Guziol&lt;/button>
+&lt;button class="btn color-main">Kolor główny&lt;/button>
+&lt;button class="btn color-accent-1">Kolor akcentu 1&lt;/button>
+&lt;button class="btn color-accent-2">Kolor akcentu 2&lt;/button>
+&lt;button class="btn color-green">Akceptuj&lt;/button>
+&lt;button class="btn color-yellow">Uwaga&lt;/button>
+&lt;button class="btn color-red">Anuluj&lt;/button>
+&lt;button class="btn color-blue">Informacja&lt;/button>
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy" data-toClipboard></button>
+					</p>
+				</div>
+
+	<!-- Plakietki -->
+			<h2 id="badges">Plakietki</h2>
+			<hr>
+				<p>
+					Plakietki tworz się w ten sam sposób co <a href="#buttons" class="link">przyciski</a>, z tym że używamy znacznika <code class="inline">&lt;span></code> zamiast <code class="inline">&ltbutton></code>.
+				</p>
+
+				<div class="frmdfld">
+					<p style="line-height: 2.3rem;">
+						<span class="btn">Plakietka</span>
+						<span class="btn color-main">Kolor główny</span>
+						<span class="btn color-accent-1">Kolor akcentu 1</span>
+						<span class="btn color-accent-2">Kolor akcentu 2</span>
+						<span class="btn color-green">Akceptuj</span>
+						<span class="btn color-yellow">Uwaga</span>
+						<span class="btn color-red">Anuluj</span>
+						<span class="btn color-blue">Informacja</span>
+					</p>
+					<hr class="divide">
+<pre><code class="language-html">&lt;span class="btn">Plakietka&lt;/span>
+&lt;span class="btn color-main">Kolor główny&lt;/span>
+&lt;span class="btn color-accent-1">Kolor akcentu 1&lt;/span>
+&lt;span class="btn color-accent-2">Kolor akcentu 2&lt;/span>
+&lt;span class="btn color-green">Akceptuj&lt;/span>
+&lt;span class="btn color-yellow">Uwaga&lt;/span>
+&lt;span class="btn color-red">Anuluj&lt;/span>
+&lt;span class="btn color-blue">Informacja&lt;/span>
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy" data-toClipboard></button>
+					</p>
+				</div>
+
+	<!-- Pola tekstowe -->
+			<h2 id="inputs">Pola tekstowe</h2>
+			<hr>
+				<p>
+					Pole tekstwe to standardowy znacznik <code class="inline">&lt;input></code>. Pole domyślnie rozciągnie się na całą szerokość rodzica, aby je ograniczyć można zastosować <code class="inline">style="max-width: "</code>.
+				</p>
+
+				<div class="frmdfld">
+						<input style="max-width: 300px;">
+					<hr class="divide">
+<pre><code class="language-html">&lt;input style="max-width: 300px;">
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy" data-toClipboard></button>
+					</p>
+				</div>
+
+				<p>
+					Pole tekstowe można wzbogacić o <i>Dodatki do pól tekstowych</i>. Przed dodaniem <i>Dodatku do pól tekstowych</i> należy "obciąć" pożądaną stronę pola tekstowego.
+				</p>
+
+				<div class="frmdfld">
+						<input style="max-width: 300px;" class="input-flat-right">
+					<hr class="divide">
+<pre><code class="language-html">&lt;
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy" data-toClipboard></button>
+					</p>
+				</div>
+
+	<!--  -->
+			<h2 id=""></h2>
+			<hr>
+				<p>
+					
+				</p>
+
+				<div class="frmdfld">
+
+					<hr class="divide">
+<pre><code class="language-html">
+
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy" data-toClipboard></button>
+					</p>
+				</div>
+
+	<!--  -->
+			<h2 id=""></h2>
+			<hr>
+				<p>
+					
+				</p>
+
+				<div class="frmdfld">
+
+					<hr class="divide">
+<pre><code class="language-html">
+
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy" data-toClipboard></button>
+					</p>
+				</div>
+
+
+
+	</div>
+
+	<div id="footer-placeholder"></div>
+
+</body>

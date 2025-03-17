@@ -58,3 +58,17 @@
 .color-yellow {
 	background-color: #ffca2c;
 }
+
+/* Przycisk "Informacja" koloru żółtego */
+.color-blue {
+	background-color: #51bbe6;
+}
+
+/* Plakietka */
+span.btn:hover::after {
+	opacity: 0;
+}
+
+span.btn {
+	cursor: unset;
+}
