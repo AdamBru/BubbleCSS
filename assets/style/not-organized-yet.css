@@ -126,3 +126,18 @@ hr {
 	width: 100%;
 	margin: -15px 0 0 0;
 }
+
+/* Cień */
+.shadow {
+	--shadow-size: 10px;
+	filter: drop-shadow(0 0 var(--shadow-size) #bbbbbbbb);
+}
+
+/* Powiększenie po najechaniu */
+.hover-sizeup {
+	transition: all 0.2s ease-in-out;
+}
+
+.hover-sizeup:hover {
+	transform: scale(1.4);
+}

@@ -90,7 +90,11 @@
 					<p><i>footer.html</i></p>
 					<hr class="divide">
 <pre><code class="language-html">&lt;div class="footer"&gt;
-
+    &lt;div class="row">
+        &lt;div class="col content-center"> Treść kolumny 1 stopki &lt;/div&gt;
+        &lt;div class="col content-center"> Treść kolumny 2 stopki &lt;/div&gt;
+        &lt;div class="col content-center"> Treść kolumny 3 stopki &lt;/div&gt;
+    &lt;/div>
 &lt;/div&gt;
 </code></pre>
 				<hr class="divide">
@@ -117,7 +121,7 @@
 </code></pre>
 				<hr class="divide">
 			</div>
-		<!-- Pole z ramką -->
+
 			<div class="frmdfld">
 				<p>
 					Główną zawartość strony należy umieścić w elemencie <code class="inline">div</code> z klasą <code class="inline">class="page-container"</code>.
@@ -133,6 +137,7 @@
 				</p>
 			</div>
 
+		<!-- Pole z ramką -->
 			<h2>Pole z ramką</h2>
 			<hr>
 
@@ -157,12 +162,94 @@
 					<button class="btn copy" data-toClipboard></button> 
 				</p>
 			</div>
-
+		<!-- Pozioma linia -->
 			<h2>Pozioma linia</h2>
 			<hr>
 				<p>
 					Pozioma linia do oddzielania sekcji. <code class="inline">&lt;hr&gt;</code>.
 				</p>
+
+	<!-- Układ elementów -->
+			<h2 id="layout">Układ elementów</h2>
+			<hr>
+				<p>
+					Elementy można szybko układać za pomocą znaczników <code class="inline">&lt;div></code> z klasami <code class="inline">"row"</code> dla wiersza i <code class="inline">"col"</code> dla kolumny. Aby wyśrodkowąć zawartość elementu, należy dodać klasę <code class="inline">"content-center"</code>.
+				</p>
+				<div class="frmdfld">
+						<div class="row" style="background-color: var(--color-main);">
+							<i>class="row"</i>
+							<div class="row" style="margin: 0;">
+								<div class="col" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 10px; height: 70px;"> <i>class="col"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 10px 10px 5px; height: 70px;"> <i>class="col content-center"</i> </div>
+							</div>
+						</div>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="row"&gt;
+    &lt;div class="col"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy" data-toClipboard></button>
+					</p>
+				</div>
+
+				<div class="frmdfld">
+					<p>
+						Przykład stworzenia siatki 3x4 (z dodatkowymi marginesami dla widoczności w przykładzie)
+					</p>
+					<hr class="divide">
+						<div class="row" style="background-color: var(--color-main); margin-bottom: 0;">
+							<i>class="row"</i>
+							<div class="row" style="margin: 0;">
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 10px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+							</div>
+						</div>
+						<div class="row" style="background-color: #dba8a8; margin: 0;">
+							<div class="row" style="margin: 0;">
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 10px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+							</div>
+						</div>
+						<div class="row" style="background-color: var(--color-main); margin: 0;">
+							<div class="row" style="margin: 0;">
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 10px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+								<div class="col content-center" style="background-color: var(--color-accent-1); margin: 10px 5px 10px 5px; min-height: 70px;"> <i>class="col content-center"</i> </div>
+							</div>
+						</div>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="row"&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+					</p>
+				</div>
 
 	</div>
 

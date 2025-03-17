@@ -62,7 +62,7 @@ function toClipboard(e) {
 	var copyText = e.target.parentNode.parentNode.querySelector('pre > code').textContent;
 	navigator.clipboard.writeText(copyText);
 	
-	alert("Copied the text: " + copyText);
+	alert("Skopiowany tekst: \n" + copyText);
   }
 
 const clipboardButtons = document.querySelectorAll('[data-toClipboard]');

@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+	#examples-img {
+		max-width: calc(100vw - 75px);
+		padding: 0 !important;
+		margin-bottom: 20px;
+	}
+
+	#get-started-btn {
+		margin-top: 50px;
+	}
+}
