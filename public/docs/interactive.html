@@ -56,15 +56,15 @@
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">
-						<button class="btn copy" data-toClipboard></button>
-					</p>
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
 				</div>
 
 	<!-- Plakietki -->
 			<h2 id="badges">Plakietki</h2>
 			<hr>
 				<p>
-					Plakietki tworz się w ten sam sposób co <a href="#buttons" class="link">przyciski</a>, z tym że używamy znacznika <code class="inline">&lt;span></code> zamiast <code class="inline">&ltbutton></code>.
+					Plakietki tworzy się w ten sam sposób co <a href="#buttons" class="link">Przyciski</a>, z tym że używamy znacznika <code class="inline">&lt;span></code> zamiast <code class="inline">&ltbutton></code>.
 				</p>
 
 				<div class="frmdfld">
@@ -90,8 +90,8 @@
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">
-						<button class="btn copy" data-toClipboard></button>
-					</p>
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
 				</div>
 
 	<!-- Pola tekstowe -->
@@ -108,8 +108,8 @@
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">
-						<button class="btn copy" data-toClipboard></button>
-					</p>
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
 				</div>
 
 				<p>
@@ -117,14 +117,175 @@
 				</p>
 
 				<div class="frmdfld">
-						<input style="max-width: 300px;" class="input-flat-right">
+						<input style="max-width: 300px; display: inline-block;" class="input-flat-right" placeholder="class=&quot;input-flat-right&quot;">
+						<input style="max-width: 300px; display: inline-block;" class="input-flat-left" placeholder="class=&quot;input-flat-left&quot;">
+						<input style="max-width: 300px; display: inline-block;" class="input-flat-both" placeholder="class=&quot;input-flat-both&quot;">
 					<hr class="divide">
-<pre><code class="language-html">&lt;
+<pre><code class="language-html">&lt;input class="input-flat-right">
+&lt;input class="input-flat-right">
+&lt;input class="input-flat-both">
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">
-						<button class="btn copy" data-toClipboard></button>
+						<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
 					</p>
+				</div>
+
+				<p>
+					Pole tekstowe z <i>Dodatkiem do pól tekstowych</i> trzeba ująć w <code class="inline">&lt;div></code> z klasą <code class="inline">"input-group"</code>.
+				</p>
+				<div class="frmdfld">
+						<div class="input-group" style="width: 100%;">
+							<input class="input-flat-right" placeholder="class=&quot;input-flat-right&quot;" style="max-width: 300px;">
+							<span class="input-addon-right">class="input-addon-right"</span>
+						</div>
+						<div class="input-group" style="width: 100%;">
+							<span class="input-addon-left">class="input-addon-left"</span>
+							<input class="input-flat-left" placeholder="class=&quot;input-flat-left&quot;" style="max-width: 300px;">
+						</div>
+						<div class="input-group" style="width: 100%;">
+							<span class="input-addon-left">class="input-addon-left"</span>
+							<input class="input-flat-both" placeholder="class=&quot;input-flat-both&quot;" style="max-width: 300px;">
+							<span class="input-addon-right">class="input-addon-right"</span>
+						</div>
+						<div class="input-group" style="width: 100%;">
+							<input class="input-flat-right" placeholder="class=&quot;input-flat-right&quot;" style="max-width: 300px;">
+							<span class="input-addon-center">class="input-addon-center"</span>
+							<input class="input-flat-left" placeholder="class=&quot;input-flat-left&quot;" style="max-width: 300px;">
+						</div>
+					<hr class="divide">
+<pre><code class="language-html">&lt;!-- (input][addon) --&gt;
+&lt;div class="input-group">
+    &lt;input class="input-flat-right">
+    &lt;span class="input-addon-right">&lt;/span>
+&lt;/div>
+
+&lt;!-- (addon][input) --&gt;
+&lt;div class="input-group">
+    &lt;span class="input-addon-left">&lt;/span>
+    &lt;input class="input-flat-left">
+&lt;/div>
+
+&lt;!-- (addon][input][addon) --&gt;
+&lt;div class="input-group">
+    &lt;span class="input-addon-left">&lt;/span>
+    &lt;input class="input-flat-both">
+    &lt;span class="input-addon-right">&lt;/span>
+&lt;/div>
+
+&lt;!-- (input][addon][input) --&gt;
+&lt;div class="input-group">
+    &lt;input class="input-flat-right">
+    &lt;span class="input-addon-center">&lt;/span>
+    &lt;input class="input-flat-left">
+&lt;/div>
+</code></pre>					
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+					</p>
+				</div>
+
+				<div class="frmdfld">
+					<p>
+						Przykłady użycia pól tekstowych z <i>Dodatkami do pól tekstowych</i>
+					</p>
+					<hr class="divide">
+						<div class="input-group" style="width: 100%;">
+							<input class="input-flat-right" placeholder="twoja-strona" style="max-width: 300px;">
+							<span class="input-addon-right">.pl</span>
+						</div>
+						<div class="input-group" style="width: 100%;">
+							<span class="input-addon-left">www.</span>
+							<input class="input-flat-both" placeholder="twoja-strona" style="max-width: 300px;">
+							<span class="input-addon-right">.com</span>
+						</div>
+						<div class="input-group" style="width: 50%;">
+							<input class="input-flat-right" placeholder="użytkownik" style="max-width: 300px;">
+							<span class="input-addon-center">@</span>
+							<input class="input-flat-left" placeholder="serwer" style="max-width: 300px;">
+					</div>
+				</div>
+
+	<!-- Listy rowzijane -->
+			<h2 id="dropdowns">Listy rowzijane</h2>
+			<hr>
+				<p>
+					Listy rozwijane (<i>"Dropdown"</i>) można formatować jak <a href="#buttons" class="link">Przyciski</a>.
+				</p>
+
+				<div class="frmdfld">
+						<div class="input-group">
+							<select class="btn">
+								<option>Opcja 1</option>
+								<option>Opcja 2</option>
+								<option>Opcja 3</option>
+							</select>
+
+							<select class="btn color-main">
+								<option>Opcja 1</option>
+								<option>Opcja 2</option>
+								<option>Opcja 3</option>
+							</select>
+						
+							<select class="btn color-green">
+								<option>Opcja 1</option>
+								<option>Opcja 2</option>
+								<option>Opcja 3</option>
+							</select>
+						</div>
+					<hr class="divide">
+<pre><code class="language-html">&lt;select class="btn"&gt;
+    &lt;option&gt;Opcja 1&lt;/option&gt;
+    &lt;option&gt;Opcja 2&lt;/option&gt;
+    &lt;option&gt;Opcja 3&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="btn color-main"&gt;
+    &lt;option&gt;Opcja 1&lt;/option&gt;
+    &lt;option&gt;Opcja 2&lt;/option&gt;
+    &lt;option&gt;Opcja 3&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="btn color-green"&gt;
+    &lt;option&gt;Opcja 1&lt;/option&gt;
+    &lt;option&gt;Opcja 2&lt;/option&gt;
+    &lt;option&gt;Opcja 3&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
+				</div>
+
+				<div class="frmdfld">
+						<p>Przykład z polem tekstowym, <i>Dodatkiem do pól tekstowych</i> i listą rozwijaną</p>
+					<hr class="divide">
+						<div class="input-group">
+							<span class="input-addon-left">www.</span>
+							<input class="input-flat-both" placeholder="twoja-strona" style="max-width: 300px;">
+							<select class="input-addon-right">
+								<option>.pl</option>
+								<option>.com</option>
+								<option>.net</option>
+							</select>
+						</div>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="input-group"&gt;
+    &lt;span class="input-addon-left"&gt;www.&lt;/span&gt;
+    &lt;input class="input-flat-both" placeholder="twoja-strona" style="max-width: 300px;"&gt;
+    &lt;select class="input-addon-right"&gt;
+        &lt;option&gt;.pl&lt;/option&gt;
+        &lt;option&gt;.com&lt;/option&gt;
+        &lt;option&gt;.net&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+</code></pre>
+				<hr class="divide">
+				<p class="text-end">
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
 				</div>
 
 	<!--  -->
@@ -142,11 +303,11 @@
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">
-						<button class="btn copy" data-toClipboard></button>
-					</p>
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
 				</div>
 
-	<!--  -->
+				<!--  -->
 			<h2 id=""></h2>
 			<hr>
 				<p>
@@ -161,8 +322,46 @@
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">
-						<button class="btn copy" data-toClipboard></button>
-					</p>
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
+				</div>
+
+				<!--  -->
+			<h2 id=""></h2>
+			<hr>
+				<p>
+					
+				</p>
+
+				<div class="frmdfld">
+
+					<hr class="divide">
+<pre><code class="language-html">
+
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
+				</div>
+
+				<!--  -->
+			<h2 id=""></h2>
+			<hr>
+				<p>
+					
+				</p>
+
+				<div class="frmdfld">
+
+					<hr class="divide">
+<pre><code class="language-html">
+
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+					<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+				</p>
 				</div>
 
 
