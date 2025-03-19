@@ -41,7 +41,7 @@
 
 .menu > ul > li > a {
 	display: block;
-	padding: 5px 20px;
+	padding: 7px 20px;
 	color: #000;
 	transition: background-color 0.2s ease-in-out;
 }
@@ -90,7 +90,12 @@
 
 	.menu {
 		/* display: none; */
-		width: 100%;
+		width: calc(100% - 40px);
+		margin: auto;
+	}
+
+	.menu * {
+		font-size: .9rem;
 	}
 
 	.menu-toggle {
@@ -100,7 +105,5 @@
 		position: absolute;
 		left: 0;
 	}
-
-
 
 }

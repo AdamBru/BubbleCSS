@@ -399,14 +399,20 @@
 			<h2 id="tooltips">Tooltip</h2>
 			<hr>
 				<p>
-					
+					Tooltip, czyli niewielki dymek nad elementem można dołożyć do dowolnego innego elementu. Naleleży do owego elementu dodać klasę <code class="inline">"tooltip"</code> oraz atrybut <code class="inline">data-tooltip=""</code> z treścią dymku wpisaną w cudzysłowie.
 				</p>
 
 				<div class="frmdfld">
-
+						<button class="btn tooltip" data-tooltip="Jestem tooltipem">Najedź na mnie</button>
+						<div class="input-group tooltip" data-tooltip="Naleleży wypełnić to pole">
+							<input type="text">
+						</div>
 					<hr class="divide">
-<pre><code class="language-html">
+<pre><code class="language-html">&lt;button class="btn tooltip" data-tooltip="Jestem tooltipem"&gt;Najedź na mnie&lt;/button&gt;
 
+&lt;div class="input-group tooltip" data-tooltip="Naleleży wypełnić to pole"&gt;
+    &lt;input type="text"&gt;
+&lt;/div&gt;
 </code></pre>
 					<hr class="divide">
 					<p class="text-end">

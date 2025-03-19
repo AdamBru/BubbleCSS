@@ -152,6 +152,7 @@
 	#navigation-placeholder {
 		justify-content: flex-end;
 		top: var(--header-height) !important;
+		top: 0 !important;
 	}
 
 	.top-nav {
