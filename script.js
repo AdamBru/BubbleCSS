@@ -77,8 +77,8 @@ function loadLogo() {
 	const logos = document.querySelectorAll('.logo');
 	if (logos.length > 0) {
 		logos.forEach(logo => {
+			logo.style.backgroundImage = `url('${logoUrl}')`;
 			console.log(logo.style.background)
-			logo.style.background = `url('${logoUrl}')`;
 		});
 	} else {
 		console.error("Nie znaleziono elementów .logo");
