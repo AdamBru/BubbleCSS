@@ -84,8 +84,11 @@ function loadLogo() {
 		console.error("Nie znaleziono elementów .logo");
 	}
 }
+
+// Modal
+function modal(modalHeader, modalContent) {
+
+	let opakowanie = document.createElement('div');
+	okienko.classList.add('modal');
 	
-// Test ścieżek
-// console.log('Ścieżka domowa: ' + basePath);
-// console.log('Ścieżka logo: ' + logoUrl);
-// console.log('header: ' + `${basePath}components/header.html`);
+}
