@@ -19,7 +19,13 @@ pre > code {
 	left: -20px;
 	margin-bottom: -30px;
 	margin-top: 15px;
-	font-size: .95rem;
+	font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+	pre > code {
+		font-size: .8rem;
+	}
 }
 
 code.inline {
@@ -152,4 +158,113 @@ h2 {
 	scroll-margin-top: 40px;
 }
 
+/* Ikony */
+.icon {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 1rem;
+	width: 1rem;
+	margin: 0 5px -2px 0;
+	display: inline-block;
+}
+.play {background-image: url(/assets/images/play.png);}
+.layout {background-image: url(/assets/images/layout.png);}
+.hand {background-image: url(/assets/images/hand_draw.png);}
+.text {background-image: url(/assets/images/text_cursor.png);}
+.brush {background-image: url(/assets/images/paintbrush.png);}
+
 /* Modal */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.1s ease-in-out, visibility 0s 0.1s;
+}
+
+.modal-show {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.1s ease-in-out, visibility 0s 0s;
+}
+
+.modal-hide {
+	opacity: 0;
+}
+
+.modal-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #3338;
+}
+
+.modal-okno {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	max-width: 400px;
+	width: 100%;
+	height: fit-content;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 5px;
+	border-radius: var(--round-value);
+	filter: drop-shadow(0 0 20px #3335);
+}
+
+.modal-head {
+	width: 100%;
+	background-color: var(--color-accent-1);
+	border-radius: var(--round-value) var(--round-value) 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 25px;
+}
+
+.modal-content {
+	width: 100%;
+	padding: 15px 25px;
+}
+
+.modal-zamknij {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--round-value);
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out;
+}
+
+.modal-zamknij:hover { background-color: rgba(174, 22, 22, 0.736); }
+
+.modal-zamknij::before,
+.modal-zamknij::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 25px;
+	height: 3px;
+	background-color: #222;
+	border-radius: 2px;
+	transition: background-color 0.1s ease-in-out;
+}
+
+.modal-zamknij::before { transform: rotate( 45deg ); }
+
+.modal-zamknij::after { transform: rotate( -45deg ); }
+
+.modal-zamknij:hover::before,
+.modal-zamknij:hover::after { background-color: #fff; }

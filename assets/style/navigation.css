@@ -1,7 +1,7 @@
 #navigation-placeholder {
 	display: flex;
 	justify-content: center;
-	z-index: 100;
+	z-index: 3;
 	width: calc(100% - var(--round-value)*2);
 	position: sticky;
 	top: 0;
@@ -12,7 +12,7 @@
 	background-color: var(--color-accent-1);
 	width: fit-content;
 	height: fit-content;
-	z-index: 100;
+	/* z-index: 100; */
 	padding: 0 10px 10px;
 	margin-bottom: 10px;
 	justify-content: center;
@@ -28,7 +28,7 @@
 	height: fit-content;
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	/* z-index: 100; */
 	border-radius: 0 0 var(--round-value) var(--round-value);
 	margin-bottom: 10px;
 	padding: 0 10px;
@@ -99,7 +99,7 @@
 				margin-top: 10px;
 				padding-top: 0;
 				border-radius: calc(var(--round-value) * .66);
-				z-index: 101; 
+				z-index: 4; 
 				overflow: hidden;
 				pointer-events: none;
 				
@@ -134,7 +134,7 @@
 						left: 0;
 						width: 100%;
 						height: 120%; 
-						z-index: 102;
+						/* z-index: 102; */
 					}
 
 					.top-nav > ul > li > ul > li > a:hover {
@@ -152,6 +152,7 @@
 	#navigation-placeholder {
 		justify-content: flex-end;
 		top: var(--header-height) !important;
+		/* top: 0 !important; */
 	}
 
 	.top-nav {
@@ -162,6 +163,7 @@
 		display: block;
 		justify-content: center;
 		cursor: pointer;
+		z-index: 5;
 	}
 
 	.top-nav.active {

@@ -1,3 +1,15 @@
+// Modal import 
+import { modal } from '/assets/modal.js';
+
+
+// modal('modal z przyciskiem', 
+// 	'Promocja: tylko dzisiaj kup 2 pomidory zapłać za 3! <p class="text-center"><button class="btn">Kup teraz</button></p>');
+
+function showModal(tytul, tresc) {
+		modal(tytul, tresc);
+	}
+	window.showModal = showModal;
+
 // Pobiera ścieżkę bazową z atrybutu data-base-path w znaczniku script
 const basePath = document.querySelector('script[src$="script.js"]').dataset.basePath;
 const logoPath = document.querySelector('script[src$="script.js"]').dataset.logoPath;
@@ -9,7 +21,22 @@ fetch(`${basePath}components/header.html`)
 		document.getElementById('header-placeholder').innerHTML = data;
 		loadLogo();
 		
-		calculateHeaderHeight();
+		const totalHeaderHeight = calculateHeaderHeight();
+
+		fetch(`${basePath}components/navigation.html`)
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('navigation-placeholder').innerHTML = data;
+			
+				// Przełączanie Burger Menu
+				const menuToggle = document.querySelector('.nav-toggle');
+				const topNav = document.querySelector('.top-nav');
+				menuToggle.addEventListener('click', () => topNav.classList.toggle('active'));
+
+				// Ustawianie top == totalHeaderHeight dla navigation-placeholder
+				document.getElementById('navigation-placeholder').style.setProperty('--header-height', totalHeaderHeight + 'px');
+			})
+			.catch(error => console.error('Błąd wczytywania navigation', error));
 	})
 	.catch(error => console.error('Błąd wczytywania header', error));
 
@@ -17,11 +44,15 @@ fetch(`${basePath}components/header.html`)
 function calculateHeaderHeight() {
 	const header = document.querySelector('.header');
 	if (header) {
-	  headerHeight = header.getBoundingClientRect().height;
-	  headerMargin = parseInt(getComputedStyle(header).margin, 10) || 0;
-	  totalHeaderHeight = headerHeight + headerMargin;
+		var headerHeight = header.getBoundingClientRect().height;
+		var headerMargin = parseInt(getComputedStyle(header).margin, 10) || 0;
+		var totalHeaderHeight = headerHeight + headerMargin;
+		return totalHeaderHeight;
+	} else {
+		console.error("element .header nie został znaleziony");
+		return 0;
 	}
-  }
+}
 	
 // Dodaje pasek nawigacji zdefiniowany w components/navigation.html w miejsce elementu div o id 'navigation-placeholder'
 fetch(`${basePath}components/navigation.html`)
@@ -35,7 +66,7 @@ fetch(`${basePath}components/navigation.html`)
 		menuToggle.addEventListener('click', () => topNav.classList.toggle('active'));
 
 		// Ustawianie top == totalHeaderHeight dla navigation-placeholder
-		document.getElementById('navigation-placeholder').style.setProperty('--header-height', totalHeaderHeight + 'px');
+		// document.getElementById('navigation-placeholder').style.setProperty('--header-height', totalHeaderHeight + 'px');
 	})
 	.catch(error => console.error('Błąd wczytywania navigation', error));
 
@@ -46,7 +77,7 @@ fetch(`${basePath}components/menu.html`)
 		document.getElementById('menu-placeholder').innerHTML = data;
 
 		// Ustawianie top == totalHeaderHeight dla menu-placeholder
-		document.getElementById('menu-placeholder').style.setProperty('--header-height', totalHeaderHeight + 'px');
+		// document.getElementById('menu-placeholder').style.setProperty('--header-height', totalHeaderHeight + 'px');
 	})
 	.catch(error => console.error('Błąd wczytywania menu', error));
 
@@ -78,17 +109,9 @@ function loadLogo() {
 	if (logos.length > 0) {
 		logos.forEach(logo => {
 			logo.style.backgroundImage = `url('${logoUrl}')`;
-			console.log(logo.style.background)
+			// console.log(logo.style.backgroundImage) 			// do sprawdzania załadowanego obrazka logo
 		});
 	} else {
 		console.error("Nie znaleziono elementów .logo");
 	}
-}
-
-// Modal
-function modal(modalHeader, modalContent) {
-
-	let opakowanie = document.createElement('div');
-	okienko.classList.add('modal');
-	
 }
