@@ -1,8 +1,4 @@
 :root {
-	/* Ściaka do logo, w folderze assets/images */
-	--logo: url("../images/default/bubblecss-logo-aqua.svg");
-	/* --logo: url("../images/"); */
-
 	/* Definicje kolorów */
 	--color-main: #ffc3c3;
 	--color-accent-1: #77cbd3;
@@ -16,12 +12,5 @@
 
 	/* Domyślna czcionka */
 	font-family: "Lato", sans-serif;
-
-
-	/* coś jakieś tło tutaj czy cuś */
-
-
-
-
 
 }

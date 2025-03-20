@@ -6,4 +6,7 @@
 
 	/* Wartość zaokrąglenia rogów; wartość domyślna: 30px */
 	--round-value: 30px;
+
+	/* Domyślna wielkość czcionki */
+	font-size: 20px;
 }
