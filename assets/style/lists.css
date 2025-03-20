@@ -1,0 +1,39 @@
+/* Listy */
+.list {
+	width: fit-content;
+	list-style-position: inside ;
+}
+
+.list * {
+	list-style-position: inside;
+}
+
+.list li {
+	padding: 3px;
+	padding-left: 15px;
+}
+
+.list-underline li {
+	border-bottom: 1px solid #aaa;
+	padding-right: 10px;
+	padding: 7px 15px;
+}
+
+ul.list {
+	list-style-type: none;
+}
+
+ul.list li::before {
+	content: "\2013";
+	margin-right: 10px;
+}
+
+/* Listy zagnieżdżone */
+.list ol > li,
+.list ul > li {
+	padding-left: 30px;
+}
+
+.list ul > li::before {
+	content: "\2937";
+}

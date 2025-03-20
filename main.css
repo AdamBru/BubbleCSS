@@ -10,5 +10,8 @@
 @import url(./assets/style/text.css);
 @import url(./assets/style/footer.css);
 @import url(./assets/style/miscellaneous.css);
+@import url(./assets/style/modal.css);
+@import url(./assets/style/lists.css);
+@import url(./assets/style/tooltip.css);
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css);
