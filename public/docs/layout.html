@@ -268,6 +268,48 @@
 					</p>
 				</div>
 
+				<p>
+					<span class="btn color-yellow">Uwaga!</span> Dla większej elastyczności wprowadzno podział na klasy <code class="inline">"col"</code> i <code class="inline">"col-even"</code>. Poniżej przedstawiona została różnica w zastosowaniu.
+				</p>
+
+				<div class="frmdfld">
+						<code class="inline">"col"</code> - kolumna zajmie tyle miejsca, ile potrzebuje
+					<hr class="divide">
+						<div class="row">
+							<div class="col content-center" style="background-color: var(--color-accent-1); padding: 5px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit, laudantium voluptate dolores sint est nam nihil atque fuga nulla officiis accusamus incidunt amet eius hic perferendis maiores qui dolore!</div>
+							<div class="col content-center" style="background-color: var(--color-accent-2); padding: 5px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit, laudantium voluptate dolores sint est nam nihil atque fuga nulla officiis accusamus incidunt amet eius hic perferendis maiores qui dolore!</div>
+						</div>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="row"&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+    &lt;div class="col content-center"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+					</p>
+				</div>
+
+				<div class="frmdfld">
+						<code class="inline">"col-even"</code> - wszystkie kolumny w rzędzie będą miały tą samą szerokość
+					<hr class="divide">
+						<div class="row">
+							<div class="col-even content-center" style="background-color: var(--color-accent-1); padding: 5px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit, laudantium voluptate dolores sint est nam nihil atque fuga nulla officiis accusamus incidunt amet eius hic perferendis maiores qui dolore!</div>
+							<div class="col-even content-center" style="background-color: var(--color-accent-2); padding: 5px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit, laudantium voluptate dolores sint est nam nihil atque fuga nulla officiis accusamus incidunt amet eius hic perferendis maiores qui dolore!</div>
+						</div>
+					<hr class="divide">
+<pre><code class="language-html">&lt;div class="row"&gt;
+    &lt;div class="col-even content-center"&gt;&lt;/div&gt;
+    &lt;div class="col-even content-center"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+					<hr class="divide">
+					<p class="text-end">
+						<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+					</p>
+				</div>
+
 	</div>
 
 	<div id="footer-placeholder"></div>

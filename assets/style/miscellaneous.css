@@ -57,8 +57,8 @@ code.inline {
 
 /* btn Copy icon */
 .copy {
-	background: url(/assets/images/copy.png), #ddd;
 	background: url(https://adambru.github.io/BubbleCSS/assets/images/copy.png), #ddd;
+	background: url(/assets/images/copy.png), #ddd;
 	background-size: 20px 20px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -86,16 +86,24 @@ hr {
 /* Cień */
 .shadow {
 	--shadow-size: 10px;
-	filter: drop-shadow(0 0 var(--shadow-size) #bbbbbbbb);
+	filter: drop-shadow(0 0 var(--shadow-size) #bbbb);
+}
+
+span.shadow, p.shadow, h1.shadow, h2.shadow, h3.shadow, h4.shadow, h5.shadow, h6.shadow, i.shadow, b.shadow {
+	text-shadow: 0 0 var(--shadow-size) #bbb;
 }
 
 /* Powiększenie po najechaniu */
 .hover-sizeup {
-	transition: all 0.2s ease-in-out;
+	transition: transform 0.2s ease-out;
 }
 
 .hover-sizeup:hover {
-	transform: scale(1.4);
+	transform: scale(1.3);
+}
+
+span.hover-sizeup {
+	display: inline-block;
 }
 
 /* Przewijanie */
@@ -122,3 +130,11 @@ h2 {
 .hand {background-image: url(/assets/images/hand_draw.png);}
 .text {background-image: url(/assets/images/text_cursor.png);}
 .brush {background-image: url(/assets/images/paintbrush.png);}
+
+/* Tabele */
+table, th, td {
+	border: 1px solid #aaa;
+	padding: 3px 10px;
+	border-collapse: collapse;
+	height: 1.6rem;
+}

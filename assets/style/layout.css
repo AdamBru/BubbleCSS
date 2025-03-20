@@ -41,6 +41,11 @@ body {
 
 .col {
 	flex: 1;
+	min-width: fit-content;
+}
+
+.col-even {
+	flex: 1;
 }
 
 .content-center {
@@ -51,9 +56,16 @@ body {
 	flex-direction: column;
 }
 
+.page-container #home-row {
+	margin: 70px 0;
+}
 
 @media (max-width: 768px) {
 	body {
 		padding: 0 15px;
+	}
+
+	.page-container #home-row {
+		margin: 0;
 	}
 }
