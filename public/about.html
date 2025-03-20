@@ -13,6 +13,41 @@
 
 	<link rel="stylesheet" href="../assets/config.css">
 	<link rel="stylesheet" href="../assets/style.css">
+
+	<style>
+		.col li {
+			border-bottom: 1px solid #ccc;
+			padding: 7px 0;
+			font-size: .9rem;
+		}
+
+		.col li::before {
+			content: "-";
+			margin-right: 10px;
+		}
+
+		.col ul {
+			list-style: inside none;
+		}
+
+		.col ul > ul > li {
+			padding-left: 20px;
+			border-bottom: 1px solid #aaa;
+		}
+
+		.col ul > ul > li::before {
+			content: "\2937";
+			margin-right: 10px;
+		}
+
+		.col ul a {
+			font-weight: 300; 
+			font-style: italic; 
+			text-decoration: underline .01rem !important;
+		}
+
+		@media (max-width: 768px) {.noflex {display: none;}}
+	</style>
 </head>
 <body>
 	
@@ -22,28 +57,47 @@
 
 	<div class="page-container">
 
-		<div class="row">
-			<div class="col content-center"></div>
-			<div class="col content-center" style="background-color: aqua;">
-				a
+		<div class="row lato-light">
+			<div class="col noflex"></div>
+			<div class="col">
+				<p>
+					BubbleCSS CSS Framework - wiosenny projekt frameworka CSS, stworzony z myślą o ułatwieniu pracy Web Designerów.
+				</p>
+				<p>
+					By:&nbsp; AdamBru,&nbsp; III 2025
+				</p>
 			</div>
-			<div class="col content-center"></div>
+			<div class="col noflex"></div>
 		</div>
 		
 		<div class="row">
-			<div class="col content-center"></div>
-			<div class="col" style="background-color: aqua;">
-				a
-				<ul style="list-style: georgian;">
-					<li>a</li>
-					<li>a</li>
-					<li>a</li>
+			<div class="col noflex"></div>
+			<div class="col">
+				<p class="lato-light">Credits</p>
+				<ul>
+					<li>Czcionka <i>Lato</i> - Łukasz Dziedzic</li>
+					<ul>
+						<li><a href="https://www.latofonts.com/">https://www.latofonts.com/</a></li>
+					</ul>
+
+					<li>Czcionka <i>Super Bubbly</i></li>
+					<ul>
+						<li><a href="https://www.fontspace.com/super-bubbly-font-f122040">https://www.fontspace.com/super-bubbly-font-f122040</a></li>
+					</ul>
+
+					<li>Symbole SF</li>
+					<ul>
+						<li><a href="https://developer.apple.com/sf-symbols/">https://developer.apple.com/sf-symbols/</a></li>
+					</ul>
+
+					<li>Bubble 3 SVG Vector</li>
+					<ul>
+						<li><a href="https://www.svgrepo.com/svg/477635/bubble-3">https://www.svgrepo.com/svg/477635/bubble-3</a></li>
+					</ul>
 				</ul>
 			</div>
-			<div class="col content-center"></div>
+			<div class="col noflex"></div>
 		</div>
-
-
 
 	</div>
 
