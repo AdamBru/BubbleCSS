@@ -248,7 +248,7 @@ h2 {
 	transition: background-color 0.1s ease-in-out;
 }
 
-.modal-zamknij:hover { background-color: rgba(174, 22, 22, 0.736); }
+.modal-zamknij:hover { background-color: rgba(174, 22, 22, 0.736); filter: drop-shadow(0 0 10px #3337); }
 
 .modal-zamknij::before,
 .modal-zamknij::after {
@@ -268,3 +268,9 @@ h2 {
 
 .modal-zamknij:hover::before,
 .modal-zamknij:hover::after { background-color: #fff; }
+
+@media (max-width: 768px) {
+	.modal-okno {
+		width: 90%;
+	}
+}

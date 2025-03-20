@@ -8,4 +8,22 @@
 	#get-started-btn {
 		margin-top: 50px;
 	}
+
+	.footer .noflex {
+		width: 100%;
+		display: block;
+	}
+
+	.footer .col-links {
+		display: flex; 
+		flex-wrap: wrap; 
+		gap: 25px; 
+		flex-direction: column; 
+		align-items: center;
+	}
+}
+
+.footer .col-links > a {
+	display: inline-block;
+	width: max-content;
 }
