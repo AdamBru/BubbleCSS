@@ -1,5 +1,5 @@
 // Modal import 
-import { modal } from '/assets/modal.js';
+import { modal } from './assets/modal.js';
 
 
 // modal('modal z przyciskiem', 
@@ -13,6 +13,10 @@ function showModal(tytul, tresc) {
 // Pobiera ścieżkę bazową z atrybutu data-base-path w znaczniku script
 const basePath = document.querySelector('script[src$="script.js"]').dataset.basePath;
 const logoPath = document.querySelector('script[src$="script.js"]').dataset.logoPath;
+
+		// TEST
+		console.log(basePath);
+		console.log(logoPath);
 
 // Dodaje nagłówek zdefiniowany w components/header.html w miejsce elementu div o id 'header-placeholder'
 fetch(`${basePath}components/header.html`)
