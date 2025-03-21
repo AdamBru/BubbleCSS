@@ -14,10 +14,6 @@ function showModal(tytul, tresc) {
 const basePath = document.querySelector('script[src$="script.js"]').dataset.basePath;
 const logoPath = document.querySelector('script[src$="script.js"]').dataset.logoPath;
 
-		// TEST
-		console.log(basePath);
-		console.log(logoPath);
-
 // Dodaje nagłówek zdefiniowany w components/header.html w miejsce elementu div o id 'header-placeholder'
 fetch(`${basePath}components/header.html`)
 	.then(response => response.text())
