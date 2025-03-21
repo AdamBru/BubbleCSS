@@ -57,8 +57,8 @@ code.inline {
 
 /* btn Copy icon */
 .copy {
-	background: url(https://adambru.github.io/BubbleCSS/assets/images/copy.png), #ddd;
 	background: url(/assets/images/copy.png), #ddd;
+	background: url(https://adambru.github.io/BubbleCSS/assets/images/copy.png), #ddd;
 	background-size: 20px 20px;
 	background-repeat: no-repeat;
 	background-position: center;
