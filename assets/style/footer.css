@@ -2,9 +2,9 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	/* z-index: 100; */
 	flex-basis: 100%;
 	margin-top: 30px;
+	align-self: flex-end;
 }
 
 .footer {
@@ -16,6 +16,5 @@
 	filter: drop-shadow(0px 0px 15px #cdcdcde6);
 	padding: .5rem 1.5rem 1rem;
 	flex-basis: 100%;
-
 	display: flex;
 }

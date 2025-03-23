@@ -1,3 +1,7 @@
+#menu-placeholder {
+	align-self: flex-start;
+}
+
 .menu {
 	width: fit-content;
 	height: auto;

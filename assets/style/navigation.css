@@ -5,6 +5,7 @@
 	width: calc(100% - var(--round-value)*2);
 	position: sticky;
 	top: 0;
+	align-self: flex-start;
 }
 
 .nav-toggle {
