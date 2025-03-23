@@ -49,6 +49,47 @@
 			</p>
 			</div>
 
+	<!-- Ikony -->
+		<h2 id="icons">Ikony</h2>
+		<hr>
+			<p>
+				Dla wizualnego urozmaicenia strony można dodać ikony. Jest to znacznik <code class="inline">span</code> z klasą <code class="inline">"icon"</code> oraz klasą wybranej ikony. Domyślnie zdefiniowane są poniższe ikony.
+			</p>
+
+			<div class="frmdfld">
+					<span class="icon play"></span>
+					<span class="icon layout"></span>
+					<span class="icon hand"></span>
+					<span class="icon text"></span>
+					<span class="icon brush"></span>
+				<hr class="divide">
+<pre><code class="language-html">&lt;span class="icon play">&lt;/span>
+&lt;span class="icon layout">&lt;/span>
+&lt;span class="icon hand">&lt;/span>
+&lt;span class="icon text">&lt;/span>
+&lt;span class="icon brush">&lt;/span>
+</code></pre>
+				<hr class="divide">
+				<p class="text-end">
+				<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+			</p>
+			</div>
+
+			<p>
+				Aby utworzyć własne ikony, należy w pliku <code class="inline">style.css</code> zdefiniować klsę jako nazwę ikony oraz jako obraz tła podać ścieżkę do pliku z obrazkiem.
+			</p>
+
+			<div class="frmdfld">
+					<i>style.css</i>
+				<hr class="divide">
+<pre><code class="language-css">.nazwa-ikony {background-image: url(/ścieżka/do/obrazka/ikony);}
+</code></pre>
+				<hr class="divide">
+				<p class="text-end">
+				<button class="btn copy tooltip" data-toClipboard data-tooltip="Skopiuj"></button>
+			</p>
+			</div>
+
 	<!-- Tabele -->
 		<h2 id="tables">Tabele</h2>
 		<hr>
@@ -68,7 +109,10 @@
 													<td></td> 				<td></td> 					<td></td>
 						</tr>
 						<tr>
-													<td></td> 				<td></td> 					<td></th>
+													<td></td> 				<td></td> 					<td></td>
+						</tr>
+						<tr>
+							<td></td>				<td></td> 				<td></td> 					<td></th>
 						</tr>
 					</table>
 				<hr class="divide">
@@ -83,7 +127,10 @@
         &lt;td>&lt;/td> &lt;td>&lt;/td> &lt;td>&lt;/td>
     &lt;/tr>
     &lt;tr>
-        &lt;td>&lt;/td> &lt;td>&lt;/td> &lt;td>&lt;/th>
+        &lt;td>&lt;/td> &lt;td>&lt;/td> &lt;td>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>&lt;/td> &lt;td>&lt;/td> &lt;td>&lt;/td> &lt;td>&lt;/th>
     &lt;/tr>
 &lt;/table>
 </code></pre>

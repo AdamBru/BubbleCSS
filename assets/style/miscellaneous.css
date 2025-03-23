@@ -125,16 +125,14 @@ h2 {
 	margin: 0 5px -2px 0;
 	display: inline-block;
 }
-.play {background-image: url(/BubbleCSS/assets/images/play.png);}
-.layout {background-image: url(/BubbleCSS/assets/images/layout.png);}
-.hand {background-image: url(/BubbleCSS/assets/images/hand_draw.png);}
-.text {background-image: url(/BubbleCSS/assets/images/text_cursor.png);}
-.brush {background-image: url(/BubbleCSS/assets/images/paintbrush.png);}
+.play {background-image: url(/BubbleCSS/assets/images/play.png)}
+.layout {background-image: url(/BubbleCSS/assets/images/layout.png)}
+.hand {background-image: url(/BubbleCSS/assets/images/hand_draw.png)}
+.text {background-image: url(/BubbleCSS/assets/images/text_cursor.png)}
+.brush {background-image: url(/BubbleCSS/assets/images/paintbrush.png)}
 
-/* Tabele */
-table, th, td {
-	border: 1px solid #aaa;
-	padding: 3px 10px;
-	border-collapse: collapse;
-	height: 1.6rem;
+/* Obrazki */
+.img {
+	width: ;
+	height: auto;
 }

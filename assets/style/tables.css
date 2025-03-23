@@ -1,0 +1,44 @@
+/* Tabele */
+table, th, td {
+	border: 1px solid #aaa;
+	height: 1.6rem;
+}
+
+table {
+	border-radius: var(--round-value);
+	border-collapse: separate;
+	border-spacing: 0;
+	border: none;
+}
+
+td, th {
+	padding: 3px 10px;
+}
+
+th {
+	background-color: #eee;
+}
+
+tr:first-child th:first-child, 
+tr:first-child td:first-child {
+	border-radius: var(--round-value) 0 0 0;
+	padding-left: calc(var(--round-value) / 2);
+}
+
+tr:first-child th:last-child, 
+tr:first-child td:last-child {
+	border-radius: 0 var(--round-value) 0 0;
+	padding-right: calc(var(--round-value) / 2);
+}
+
+tr:last-child th:last-child, 
+tr:last-child td:last-child {
+	border-radius: 0 0 var(--round-value) 0;
+	padding-right: calc(var(--round-value) / 2);
+}
+
+tr:last-child th:first-child, 
+tr:last-child td:first-child {
+	border-radius: 0 0 0 var(--round-value);
+	padding-left: calc(var(--round-value) / 2);
+}

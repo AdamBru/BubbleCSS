@@ -1,0 +1,47 @@
+.tabs-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.tabs-container input[type="radio"] {
+	display: none !important;
+}
+
+.tabs-container label {
+	padding: 8px 15px;
+	background: #f3f3f3;
+	border: 1px solid #bbb;
+	border-bottom: none;
+	border-radius: calc(var(--round-value) / 2) calc(var(--round-value) / 2) 0 0;
+	cursor: pointer;
+}
+
+.tabs-container label:first-of-type {
+	margin-left: var(--round-value);
+}
+
+.tabs-container label:last-of-type {
+	margin-right: var(--round-value);
+}
+
+.tabs-container .tab-content {
+	width: 100%;
+	padding: 20px;
+	background: #fff;
+	order: 1;
+	display: none;
+}
+
+.tabs-container input[type='radio']:checked + label + .tab-content {
+	display: block;
+	border: 1px solid #bbb;
+	border-radius: var(--round-value);
+}
+
+.tabs-container input[type="radio"]:checked + label {
+	background: #fff;
+	border-bottom: 1px solid #fff !important;
+	margin-bottom: -1px;
+	z-index: 1;
+}
