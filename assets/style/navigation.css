@@ -157,7 +157,9 @@
 	}
 
 	.top-nav {
-		display: none;
+		/* display: none; */
+		visibility: hidden;
+		max-height: 0;
 	}
 
 	.nav-toggle {
@@ -169,15 +171,19 @@
 
 	.top-nav.active {
 		display: block;
+		visibility: visible;
 		position: absolute;
 		width: 100%;
+		max-height: fit-content;
 		margin-top: calc(var(--round-value));
+		transition: all .2s ease-in-out;
 	}
 	
 		.top-nav.active ~ .nav-toggle {
 			width: 100%;
 			text-align: end;
 			border-radius: 0;
+			transition: all .2s ease-in-out;
 		}
 
 		.top-nav > ul {

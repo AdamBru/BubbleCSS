@@ -8,6 +8,7 @@ body {
 	padding: 0 100px;
 	gap: 20px;
 	align-content: flex-start;
+	/* flex-direction: column; */
 }
 
 .page-container {
@@ -15,7 +16,8 @@ body {
 	min-width: 0;
 	width: 100%;
 	height: auto;
-	/* min-height: 100vh; */
+	/* min-height: 100%; */
+		min-height: calc(100vh - 344px); /* TAK, WIEM ŹE TO JEST ZŁE ALE NIE MAM JUŻ SIŁY ANI CZASU Z TYM WALCZYĆ */
 
 	display: flex;
 	flex-direction: column;
@@ -26,6 +28,7 @@ body {
 	gap: 20px;
 	position: relative;
 	margin: 0 20px;
+	/* flex: 1; */
 }
 
 /* Layouts */
