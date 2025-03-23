@@ -1,0 +1,11 @@
+* {
+	filter: none !important;
+}
+
+.top-nav * {
+	color: #333 !important;
+}
+
+.pspan {
+	margin-left: 7px;
+}

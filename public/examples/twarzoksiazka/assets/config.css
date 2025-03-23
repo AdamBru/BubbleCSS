@@ -1,0 +1,12 @@
+:root {
+	/* Definicje kolorów */
+	--color-main: #4267B2;
+	--color-accent-1: #eee;
+	--color-accent-2: #ccc;
+
+	/* Wartość zaokrąglenia rogów; wartość domyślna: 30px */
+	--round-value: 5px;
+
+	/* Domyślna wielkość czcionki */
+	font-size: 20px;
+}

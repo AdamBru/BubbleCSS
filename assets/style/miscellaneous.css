@@ -132,7 +132,7 @@ h2 {
 .brush {background-image: url(/BubbleCSS/assets/images/paintbrush.png)}
 
 /* Obrazki */
-.img {
-	width: ;
+img {
 	height: auto;
+	border-radius: calc(var(--round-value) / 2);
 }
