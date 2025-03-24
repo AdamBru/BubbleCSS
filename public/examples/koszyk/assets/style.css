@@ -1,0 +1,46 @@
+#header-placeholder *, .top-nav {
+	filter: none !important;
+}
+
+.header {
+	justify-content: flex-start;
+}
+
+.top-nav * {
+	color: #333 !important;
+}
+
+h1 {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+	max-width: fit-content;
+}
+
+.menu a:hover {
+	background-color: transparent !important;
+}
+
+.menu .input-addon-right:hover {
+	background-color: #3333;
+	transition: background-color .2s ease-in-out;
+	cursor: pointer;
+}
+
+.menu h1 {
+	font-family: lato;
+}
+
+.menu ul a {
+	padding: 8px 20px !important;
+}
+
+.menu .row > .col:last-of-type {
+	text-align: end;
+}
+
+.id-prod {
+	font-weight: 300;
+	font-size: .85rem;
+}
