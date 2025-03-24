@@ -63,6 +63,15 @@
 #get-started-btn {
 	z-index: 0;
 	position: relative;
+	transform: scale(1.45);
+	font-size: 1.4rem; 
+	color: #fff; 
+	filter: drop-shadow(0 0 80px var(--color-accent-1));
+	margin-top: 70px;
+}
+
+#get-started-btn:hover {
+	transform: scale(1.8);
 }
 
 .examples-container {
